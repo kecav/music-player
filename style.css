@@ -17,6 +17,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #000000d4;
 }
 
 .container {
@@ -24,13 +25,18 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
-    box-shadow: 0 2rem 2rem grey;
+    box-shadow: 0 2rem 2rem #0000004d;
     max-width: 30rem;
     background-color: var(--dark);
+    border-radius: 1rem;
+    justify-content: center;
 }
 
 .album {
     padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .album-image {
@@ -87,7 +93,7 @@ body {
 }
 
 .media-controls {
-    background-color: #236e65;
+    background-color: #00000069;
     padding: 1rem 0;
     display: flex;
     justify-content: center;
@@ -98,6 +104,8 @@ body {
 .playImage {
     background: #fff;
     border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
 }
 
 .timer {
@@ -109,7 +117,7 @@ body {
 }
 
 .rotateThis {
-    animation: rotation 8s infinite linear;
+    animation: rotation 32s infinite linear;
 }
 
 @keyframes rotation {
@@ -122,8 +130,16 @@ body {
 }
 
 #playBtn {
-    background: inherit;
+    background-color: #00000000;
     outline: none;
     border: none;
     cursor: pointer;
+}
+
+@media screen and (max-width:500px) {
+    .container {
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+    }
 }
