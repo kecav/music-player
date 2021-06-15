@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Music Player</title>
+</head>
+
+<body>
+    <section class="container">
+        <div class="album">
+            <img src="Media/album-image.jpg" class="album-image" title="Album Image">
+        </div>
+        <div class="details">
+            <h4 class="music-name">Naya Bharat</h4>
+            <p class="artist">Mayank Pawani</p>
+        </div>
+        <audio src="Media/music.mp3" id="audio"></audio>
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+            <div class="seek" id="seek"></div>
+        </div>
+        <div class="timer">
+            <p id="current-time">0:00</p>
+            <p id="total-time">3:56</p>
+        </div>
+        <div class="media-controls">
+            <button id="playBtn">
+                <img src="Media/play-button.png" class="playImage" title="Play">
+            </button>
+        </div>
+    </section>
+</body>
+
+</html>
